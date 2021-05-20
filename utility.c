@@ -40,8 +40,8 @@ void util_delay_minutes(int minutes)
        vTaskDelay(minutes * 60 * (1000 / portTICK_RATE_MS));
 }
 
-void app_main(void){
+// void app_main(void){
        // do nothing when directly run
 
        // in future do testing here
-}
+// }
