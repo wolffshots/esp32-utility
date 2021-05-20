@@ -20,7 +20,7 @@ esp-idf projects are build using cmake. the project build configuration is conta
 below is short explanation of remaining files in the project folder.
 
 ```
-├── include
+├── include                     header file directory
 │   └── utility.h               the header file for this component
 ├── .gitignore                  describes what files and folders git should ignore
 ├── CMakeLists.txt              base project cmake file (describes dependencies, include dir and src dir)
