@@ -11,6 +11,9 @@ extern "C" {
 #endif
 
 void print_chip_info(void);
+void util_delay_millis(int);
+void util_delay_seconds(int);
+void util_delay_minutes(int);
 
 #ifdef __cplusplus
 }
