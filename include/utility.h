@@ -11,7 +11,7 @@
 
 #ifdef __cplusplus
 extern "C" {
-#endif
+#endif // __cplusplus
 
 void print_chip_info(void);
 void util_delay_millis(int);
@@ -20,6 +20,6 @@ void util_delay_minutes(int);
 
 #ifdef __cplusplus
 }
-#endif
+#endif // __cplusplus
 
-#endif
+#endif // UTILITY_H
