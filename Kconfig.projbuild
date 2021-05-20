@@ -1,4 +1,4 @@
 # config vars for esp32-utility
-menu "esp32-utility config"
+menu "wolffshots/esp32-utility config"
     comment "no specific config needed here yet"
 endmenu
