@@ -1,4 +1,5 @@
 # esp32-utility
+Docs: [![couldn't get build status](https://api.travis-ci.com/wolffshots/esp32-utility.svg?branch=main "Current doc build status")](https://davidantliff.github.io/esp32-utility/index.html)
 
 some helper functions for printing out some information and processing agnostic data
 
