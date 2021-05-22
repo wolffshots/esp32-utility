@@ -22,6 +22,11 @@
  * SOFTWARE.
  */
 
+/**
+ * @file utility.h
+ * @brief defininitions for simple utility functions
+ */
+
 #ifndef UTILITY_H
 #define UTILITY_H
 

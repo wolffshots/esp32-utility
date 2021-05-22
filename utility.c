@@ -24,6 +24,11 @@
  * A note on the copyright line: https://www.copyright.gov/title17/92chap4.html#408
  */
 
+/**
+ * @file utility.c
+ * @brief implementation for simple utility functions
+ */
+
 #include "utility.h"
 
 /** prints esp chip information */
