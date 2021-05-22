@@ -1,4 +1,8 @@
 # config vars for esp32-utility
 menu "wolffshots/esp32-utility config"
-    comment "no specific config needed here yet"
+    config UTILITY_LOG_TAG
+        string  "log tag for utility"
+        default "esp32-utility"
+        help
+            the tag to use when using the esp logging library
 endmenu

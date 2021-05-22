@@ -30,21 +30,24 @@
  */
 
 #include "utility.h"
+#include "esp_log.h"
+
+static const char *TAG = CONFIG_UTILITY_LOG_TAG;
 
 /** prints esp chip information */
 void print_chip_info(void)
 {
        esp_chip_info_t chip_info;
        esp_chip_info(&chip_info);
-       printf("This is %s chip with %d CPU cores, WiFi%s%s, ",
-              CONFIG_IDF_TARGET,
-              chip_info.cores,
-              (chip_info.features & CHIP_FEATURE_BT) ? "/BT" : "",
-              (chip_info.features & CHIP_FEATURE_BLE) ? "/BLE" : "");
-       printf("silicon revision %d, ", chip_info.revision);
-       printf("%dMB %s flash\n", spi_flash_get_chip_size() / (1024 * 1024),
-              (chip_info.features & CHIP_FEATURE_EMB_FLASH) ? "embedded" : "external");
-       printf("Free heap: %d\n", esp_get_free_heap_size());
+       ESP_LOGI(TAG, "This is %s chip with %d CPU cores, WiFi%s%s, ",
+                CONFIG_IDF_TARGET,
+                chip_info.cores,
+                (chip_info.features & CHIP_FEATURE_BT) ? "/BT" : "",
+                (chip_info.features & CHIP_FEATURE_BLE) ? "/BLE" : "");
+       ESP_LOGI(TAG, "silicon revision %d, ", chip_info.revision);
+       ESP_LOGI(TAG, "%dMB %s flash\n", spi_flash_get_chip_size() / (1024 * 1024),
+                (chip_info.features & CHIP_FEATURE_EMB_FLASH) ? "embedded" : "external");
+       ESP_LOGI(TAG, "Free heap: %d\n", esp_get_free_heap_size());
 }
 /** 
  * delay a given amount of time
@@ -72,7 +75,7 @@ void util_delay_minutes(int minutes)
 }
 
 // void app_main(void){
-       // do nothing when directly run
+// do nothing when directly run
 
-       // in future do testing here
+// in future do testing here
 // }
