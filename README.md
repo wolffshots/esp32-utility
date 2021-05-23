@@ -24,6 +24,7 @@ below is short explanation of remaining files in the project folder.
 ├── include                     header file directory
 │   └── utility.h               the header file for this component
 ├── .gitignore                  describes what files and folders git should ignore
+├── .travis.yml                 build rules for creating docs via doxygen
 ├── CMakeLists.txt              base project cmake file (describes dependencies, include dir and src dir)
 ├── component.mk                component make file
 ├── Kconfig.projbuild           kconfig description file to add build time vars

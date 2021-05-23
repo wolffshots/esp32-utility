@@ -45,9 +45,9 @@ void print_chip_info(void)
                 (chip_info.features & CHIP_FEATURE_BT) ? "/BT" : "",
                 (chip_info.features & CHIP_FEATURE_BLE) ? "/BLE" : "");
        ESP_LOGI(TAG, "silicon revision %d, ", chip_info.revision);
-       ESP_LOGI(TAG, "%dMB %s flash\n", spi_flash_get_chip_size() / (1024 * 1024),
+       ESP_LOGI(TAG, "%dMB %s flash", spi_flash_get_chip_size() / (1024 * 1024),
                 (chip_info.features & CHIP_FEATURE_EMB_FLASH) ? "embedded" : "external");
-       ESP_LOGI(TAG, "Free heap: %d\n", esp_get_free_heap_size());
+       ESP_LOGI(TAG, "Free heap: %d", esp_get_free_heap_size());
 }
 /** 
  * delay a given amount of time
